@@ -83,10 +83,10 @@ p {
       font-size: 1.125em; } }
 
 a {
-  color: #da3400;
+  color: #b40809;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #b72b00;
+    color: #920707;
     text-decoration: underline; }
 
 img {
@@ -161,7 +161,7 @@ ol ul {
   width: 100%;
   height: 100vh;
   color: #fff;
-  background: #da3400; }
+  background: #b40809; }
 
 .intro {
   position: absolute;
@@ -315,7 +315,7 @@ ol ul {
 .btn {
   display: block;
   position: relative;
-  background-color: #da3400;
+  background-color: #b40809;
   border-radius: 0.1875em;
   color: #fff;
   font-size: 1em;
@@ -333,21 +333,21 @@ ol ul {
       margin-bottom: 0;
       margin-right: 0.9375em; } }
   .btn:hover, a .btn:hover, .btn:focus, a .btn:focus, .btn:active, a .btn:active, .btn.active {
-    background-color: #b72b00;
+    background-color: #920707;
     color: #fff;
     text-decoration: none; }
 
 .btn-secondary {
-  background-color: #120f0e; }
+  background-color: #746450; }
   .btn-secondary:hover, a .btn-secondary:hover, .btn-secondary:focus, a .btn-secondary:focus, .btn-secondary:active, a .btn-secondary:active, .btn-secondary.active {
-    background-color: black; }
+    background-color: #5f5242; }
 
 .btn-white {
   background-color: #fff;
-  color: #120f0e; }
+  color: #746450; }
   .btn-white:hover, a .btn-white:hover, .btn-white:focus, a .btn-white:focus, .btn-white:active, a .btn-white:active, .btn-white.active {
     background-color: #ededed;
-    color: black; }
+    color: #5f5242; }
 
 @keyframes grow {
   0% {
@@ -408,7 +408,7 @@ ol ul {
   top: 0;
   width: 10px;
   height: 20px;
-  background-color: #26201E;
+  background-color: #89765F;
   -webkit-animation: grow 1.5s linear infinite;
   animation: grow 1.5s linear infinite; }
   @media (min-width: 50em) {
@@ -431,26 +431,26 @@ ol ul {
   display: inline-block;
   margin: 0;
   padding-left: 0.625em;
-  color: #26201E;
+  color: #89765F;
   font-size: 1em; }
   @media (min-width: 50em) {
     .loading-text {
       font-size: 1.125em; } }
 
 .text-primary {
-  color: #FE3C00; }
+  color: #D60A0B; }
 
 .text-secondary {
-  color: #26201E; }
+  color: #89765F; }
 
 .text-white {
   color: #fff; }
 
 .bg-primary {
-  background: #FE3C00; }
+  background: #D60A0B; }
 
 .bg-accent {
-  background: #26201E; }
+  background: #89765F; }
 
 .bg-white {
   background: #fff; }
