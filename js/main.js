@@ -10,16 +10,13 @@ $.getJSON(apiUrl, function(data) {
   $.each(data.gms, function(index, obj) {
     //console.log(obj);
     var htmlEl = $(".js-result");
-    var teamName = "Buccaneers";//team
+    var teamName = "Buccaneers"; //change depending on team
     var homeTeam = obj.hnn;
     var awayTeam = obj.vnn;
     var scoreHome = obj.hs;
     var scoreAway = obj.vs;
-    var currentQtr = obj.q;
-    var gameOver = (currentQtr == "F");//final (P = pending)
-    var winnerHome = (gameOver == true && scoreHome > scoreAway);
-    var isTie = (gameOver == true && scoreHome == scoreAway);
-    var isCurrentWeek = (gameOver == false);
+    var winnerHome = (scoreHome > scoreAway);
+    var isCurrentWeek = (scoreHome == scoreAway);
  
     // Set home or away team
     if (homeTeam == teamName) {
@@ -33,17 +30,15 @@ $.getJSON(apiUrl, function(data) {
     var htmlResult;
     if (isHome == true && isCurrentWeek == true || isHome == false && isCurrentWeek == true) {
       htmlResult = "We'll find out this week vs. the " + opposingTeamName + ".";
-    } else if (isTie) {
-      htmlResult = "A freaking tie. Change the rules already, NFL!";
     } else if (isHome == true && winnerHome == true) {
-      htmlResult = "Wow. Yes, they actually beat the " + opposingTeamName + ".";
+      htmlResult = "Sure did. They beat the " + opposingTeamName + ".";
     } else if (isHome == true && winnerHome == false) {
       htmlResult = "LOL, No. Lost to the " + opposingTeamName + ".";
     } else if (isHome == false && winnerHome == true) {
-      htmlResult = "Nope. Lost to the " + opposingTeamName + ".";
+      htmlResult = "No. Lost to the " + opposingTeamName + ".";
     } else if (isHome == false && winnerHome == false) {
-      htmlResult = "OMG, Yes. They won on the road vs. the " + opposingTeamName + ".";
-    } else { 
+      htmlResult = "Yes. They won on the road vs. the " + opposingTeamName + ".";
+    } else {
       //
     }
     setTimeout(function () {
