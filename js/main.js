@@ -31,13 +31,13 @@ $.getJSON(apiUrl, function(data) {
     if (isHome == true && isCurrentWeek == true || isHome == false && isCurrentWeek == true) {
       htmlResult = "We'll find out this week vs. the " + opposingTeamName + ".";
     } else if (isHome == true && winnerHome == true) {
-      htmlResult = "Yes, it's a miracle. They beat the " + opposingTeamName + ".";
+      htmlResult = "Sure did. They beat the " + opposingTeamName + ".";
     } else if (isHome == true && winnerHome == false) {
       htmlResult = "LOL, No. Lost to the " + opposingTeamName + ".";
     } else if (isHome == false && winnerHome == true) {
-      htmlResult = "Of course not. Lost to the " + opposingTeamName + ".";
+      htmlResult = "No. Lost to the " + opposingTeamName + ".";
     } else if (isHome == false && winnerHome == false) {
-      htmlResult = "Well, I don't believe it. They won on the road vs. the " + opposingTeamName + ".";
+      htmlResult = "Yes. They won on the road vs. the " + opposingTeamName + ".";
     } else {
       //
     }
